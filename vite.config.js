@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/my-3d-gallery/', // use your repo name
+  base: '/ModelsGallery/', 
 });
