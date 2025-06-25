@@ -3,5 +3,18 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/ModelsGallery/', 
+  base: '/ModelsGallery/',
+  define: {
+    global: 'globalThis',
+  },
+  resolve: {
+    alias: {
+      crypto: 'crypto-browserify',
+      stream: 'stream-browserify',
+      util: 'util',
+    }
+  },
+  optimizeDeps: {
+    include: ['crypto-browserify', 'stream-browserify', 'util']
+  }
 });

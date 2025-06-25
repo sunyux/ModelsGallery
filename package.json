@@ -11,15 +11,16 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
-
-    
   },
   "dependencies": {
     "@react-three/drei": "^10.0.7",
     "@react-three/fiber": "^9.1.2",
+    "crypto-browserify": "^3.12.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "three": "^0.176.0"
+    "stream-browserify": "^3.0.0",
+    "three": "^0.176.0",
+    "util": "^0.12.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
